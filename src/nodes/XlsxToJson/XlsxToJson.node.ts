@@ -805,6 +805,7 @@ export class XlsxToJson implements INodeType {
 			logStep('info', `- Sheet Index: ${sheetIndex}`);
 			logStep('info', `- Headers Index: ${headersIndex}`);
 			logStep('info', `- Export Field Indices: ${exportFieldIndices.join(', ') || 'All fields'}`);
+			logStep('info', `- Field Mapping: ${fieldMappingRaw ? 'Custom mapping provided' : 'Using original field names'}`);
 			logStep('info', `- Authentication: ${useAuthentication ? 'Enabled' : 'Disabled'}`);
 			if (useAuthentication && debugMode) {
 				logStep('info', `- API Key Header: ${apiKeyHeaderName}`);
@@ -880,6 +881,7 @@ export class XlsxToJson implements INodeType {
 				'Authentication: ' + (useAuthentication ? 'enabled' : 'disabled') + ', ' +
 				'API Key Header: ' + (apiKeyHeaderName || 'not set') + ', ' +
 				'Export Field Indices: ' + exportFieldIndices.join(', ') + ', ' +
+				'Field Mapping: ' + (fieldMappingRaw ? 'custom' : 'none') + ', ' +
 				'File URL: ' + fileUrl + ', ' +
 				'File Size: ' + fileSize.toFixed(2) + ' MB');
 			const documentId = await uploadFileAndGetDocumentId(

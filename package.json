@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-xlsx-to-json",
-  "version": "0.4.14",
+  "version": "0.4.15",
   "description": "n8n node to convert Excel files to JSON via REST API",
   "keywords": [
     "n8n-community-node-package",
