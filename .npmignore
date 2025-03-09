@@ -1,0 +1,34 @@
+# Source
+src/
+tsconfig.json
+gulpfile.js
+jest.config.js
+.eslintrc.js
+.eslintrc.prepublish.js
+.prettierrc
+
+# Tests
+coverage/
+test/
+**/*.test.ts
+**/*.spec.ts
+
+# Development
+.vscode/
+.github/
+.husky/
+.editorconfig
+.gitignore
+.npmignore
+.prettierignore
+.npmrc
+.env
+node_modules/
+
+# Build artifacts
+dist/
+
+# Docs
+CONTRIBUTING.md
+images/
+docs/ 
